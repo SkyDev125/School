@@ -1,0 +1,5 @@
+{
+    "sketch": "2021_06_02\\Arduino_Follow_Me_Robot\\Arduino_Follow_Me_Robot.ino",
+    "board": "arduino:avr:uno",
+    "port": "COM3"
+}

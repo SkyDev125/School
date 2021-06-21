@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "ms-vsliveshare.vsliveshare",
+        "austin.code-gnu-global",
+        "formulahendry.code-runner",
+        "jeff-hykin.better-cpp-syntax",
+        "aaron-bond.better-comments",
+        "coenraads.bracket-pair-colorizer-2",
+        "cschlosser.doxdocgen",
+        "oderwat.indent-rainbow",
+        "christian-kohler.path-intellisense",
+        "pnp.polacode",
+        "visualstudioexptteam.vscodeintellicode"
+    ]
+}

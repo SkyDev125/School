@@ -1,0 +1,32 @@
+int valorLido = 0;
+
+void setup() {
+pinMode(2, OUTPUT); //Configuração dos LEDs como saídas
+pinMode(4, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(10, OUTPUT);
+}
+
+void loop() {
+    valorLido = analogRead(A5);//Ler valor do ADC
+
+    if (valorLido <= 205) { //Primeiro intervalo
+        digitalWrite(2, HIGH);
+    } else if (valorLido <= 410) { //Segundo intervalo
+        digitalWrite(4, HIGH);
+    } else if (valorLido <= 615) { //Terceiro intervalo
+        digitalWrite(6, HIGH);
+    } else if (valorLido <= 820) { //Quarto intervalo
+        digitalWrite(8, HIGH);
+    } else { //Quinto intervalo
+        digitalWrite(10, HIGH);
+    }
+    delay(50);
+    digitalWrite(2, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(10, LOW); 
+    delay(50); //Atraso para o ADC não ler demasiado rápido
+}
